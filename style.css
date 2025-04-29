@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* light gray */
-  color: #333;
+  background-color: #121212; /* very dark gray */
+  color: #e0e0e0; /* light gray */
 }
 
 /* Header styles */
 header {
-  background-color: #0055aa; /* deep blue */
+  background-color: #1e88e5; /* blue accent */
   color: white;
   padding: 1rem;
   text-align: center;
@@ -18,22 +18,22 @@ header {
 
 /* Navigation bar */
 nav {
-  background-color: #222;
+  background-color: #1f1f1f;
   overflow: hidden;
 }
 
 nav a {
   float: left;
   display: block;
-  color: white;
+  color: #e0e0e0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #333;
+  color: #90caf9; /* light blue on hover */
 }
 
 /* Main content */
@@ -43,13 +43,13 @@ main {
 
 /* Headings */
 h1, h2 {
-  color: darkblue;
+  color: #90caf9; /* light blue */
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: white;
+  background-color: #1f1f1f;
+  color: #ccc;
   text-align: center;
   padding: 1rem;
   position: fixed;
