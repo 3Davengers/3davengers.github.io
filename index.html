@@ -6,25 +6,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="mission.html">Our Mission</a>
     </nav>
 
+    <!-- Welcome Section -->
     <section class="welcome">
         <h1>Welcome to 3D Avengers</h1>
         <p>We're a mission-driven community using 3D printing to empower young adults with learning disabilities. Through creativity, hands-on skills, and support, we're building a future of possibility — one layer at a time.</p>
         <a href="mission.html" class="button">Learn More</a>
     </section>
 
+    <!-- Goal & Progress Section -->
     <main>
         <section class="goals">
             <h2>Our Goal</h2>
             <p>Goal: Collect 500 3D printed paintable models</p>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 60%;">300 / 500</div>
-            </div>
+
+            <!-- EDIT JUST THIS NUMBER TO UPDATE PROGRESS -->
+            <script>
+                const goal = 500;
+                const current = 300; // ← Change this number to update
+                const percent = (current / goal) * 100;
+                document.write(`
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: ${percent}%;">${current} / ${goal}</div>
+                    </div>
+                `);
+            </script>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 3D Avengers. Empowering through creativity.</p>
+    </footer>
 </body>
 </html>
