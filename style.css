@@ -20,6 +20,9 @@ header {
 nav {
   background-color: #1f1f1f;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -46,17 +49,31 @@ h1, h2 {
   color: #90caf9; /* light blue */
 }
 
-/* Footer */
-footer {
-  background-color: #1f1f1f;
-  color: #ccc;
+/* Welcome section */
+.welcome {
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  margin: 20px;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
+.welcome .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.welcome .button:hover {
+  background-color: #009975;
+}
+
+/* Goals section */
 .goals {
   padding: 20px;
   background-color: #1e1e1e;
@@ -82,4 +99,15 @@ footer {
   line-height: 30px;
   font-weight: bold;
   transition: width 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
